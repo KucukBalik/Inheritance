@@ -11,7 +11,14 @@ public class Main {
 
         System.out.printf(part1Customer.toString());
 
+        Customer part2Customer = new Customer();
 
+        part2Customer.setName("Emre2");
+        part2Customer.setAddress("Cork");
+        part2Customer.setNumber("456");
+        part2Customer.setMailingList(false);
+
+        System.out.println(part2Customer.toString());
 
         }
     }
