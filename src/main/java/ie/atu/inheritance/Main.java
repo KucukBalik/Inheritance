@@ -7,18 +7,22 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        Customer part1Customer = new Customer("Emre", "Galway", "123", false);
 
-        System.out.printf(part1Customer.toString());
+        PrefferedCustomer prefferedCustomer1 = new PrefferedCustomer();
+        prefferedCustomer1.setName("Emre");
+        prefferedCustomer1.setAddress("Galway");
+        prefferedCustomer1.setNumber("123");
+        prefferedCustomer1.setMailingList(false);
 
-        Customer part2Customer = new Customer();
+        System.out.println(prefferedCustomer1.toString());
+        System.out.println(prefferedCustomer1.getLoyaltyPoints());
 
-        part2Customer.setName("Emre2");
-        part2Customer.setAddress("Cork");
-        part2Customer.setNumber("456");
-        part2Customer.setMailingList(false);
+        prefferedCustomer1.addLoyaltyPoints(800);
 
-        System.out.println(part2Customer.toString());
 
-        }
+        System.out.println(prefferedCustomer1.toString());
+        System.out.println(prefferedCustomer1.getLoyaltyPoints());
+
+        prefferedCustomer1.discountPercentage();
     }
+}
